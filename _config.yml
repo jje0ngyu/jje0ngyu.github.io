@@ -1,0 +1,22 @@
+title: "금융 IT 개발자 블로그"
+description: "Java · Spring · 금융 시스템 인사이트"
+baseurl: ""
+url: "https://jje0ngyu.github.io"
+
+theme: minima
+
+# 카테고리
+collections:
+  posts:
+    output: true
+
+# 카테고리 태그 표시
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+markdown: kramdown
+highlighter: rouge
