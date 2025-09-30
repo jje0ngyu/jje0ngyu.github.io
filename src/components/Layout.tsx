@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import styles from "./Layout.module.css";
 
 type LayoutProps = {
     children: React.ReactNode; // 페이지별 내용이 들어감
@@ -13,7 +14,7 @@ function Layout({ children }: LayoutProps) {
             <Header />
 
             {/* 메인 컨텐츠 영역 */}
-            <main className="flex-grow container mx-auto p-4">
+            <main className={styles.container}>
                 {children}
             </main>
 
